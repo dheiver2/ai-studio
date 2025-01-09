@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',  // Importante: isso configura para build estático
-  images: {
-    unoptimized: true
-  },
-  trailingSlash: true
+  reactStrictMode: true,
+  swcMinify: true,
+  distDir: 'build'  // Especifica o diretório de build
 }
 
 module.exports = nextConfig
